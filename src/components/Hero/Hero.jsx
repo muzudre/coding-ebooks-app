@@ -8,9 +8,9 @@ import { stringToSlug } from "../../config/helper";
 const hero = (props) => {
   return props.loading ? (
     <section className="text-gray-700">
-      <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
+      <div className="flex md:flex-row flex-col items-center max-w-2xl mx-auto py-5 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="mb-2 text-2xl font-bold text-gray-800 md:text-3xl">
+          <h1 className="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-sky-300 via-sky-500 to-sky-600">
             {props.random.title}
           </h1>
           {props.random.author === "n/a" ? null : (
@@ -48,7 +48,7 @@ const hero = (props) => {
             >
               {props.random.type === "web" ? "Open" : "Download"}
             </a>
-            <Link
+            {/* <Link
               to={{
                 pathname: `/reader/${stringToSlug(props.random.title)}`,
                 name: `${props.random.title}`,
@@ -57,8 +57,8 @@ const hero = (props) => {
               state={{ from: "the-page-id" }}
               className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg"
             >
-              Read
-            </Link>
+              Read Here
+            </Link> */}
           </div>
         </div>
         <div>

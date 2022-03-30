@@ -38,7 +38,7 @@ class Book extends Component {
                   key={i}
                   className="text-gray-700 body-font border-t border-gray-200"
                 >
-                  <div className="container px-5 py-24 mx-auto flex flex-wrap">
+                  <div className="max-w-2xl mx-auto py-5 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 flex flex-wrap">
                     <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
                       <img
                         alt="feature"

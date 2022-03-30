@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const categories = (props) => (
   <section className="text-gray-700 body-font border-t border-gray-200">
-    <div className="container px-5 py-12 mx-auto">
+    <div className="max-w-2xl mx-auto py-5 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="flex flex-col w-full mb-10">
         <h1 className="mb-2 text-2xl font-bold text-gray-800 md:text-2xl">
           Categories
@@ -23,7 +23,7 @@ const categories = (props) => (
               className="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-gray-100"
             >
               <img
-                alt="team"
+                alt={item.title}
                 className="w-16 h-16  object-cover object-center flex-shrink-0 mr-4"
                 src={item.cover}
               />

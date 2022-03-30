@@ -15,7 +15,7 @@ class Main extends Component {
   }
 
   fetchData = () => {
-    fetch(`${API_URL}python.json`)
+    fetch(`${API_URL}data.json`)
       .then((result) => result.json())
       .then((result) => {
         this.setState({

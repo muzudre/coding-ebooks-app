@@ -36,7 +36,7 @@ class Category extends Component {
               </h2>
               <p>{this.props.location.desc}</p>
 
-              <div className="mt-6 grid grid-cols-3 gap-y-10 gap-x-6 sm:grid-cols-4 lg:grid-cols-5 xl:gap-x-12">
+              <div className="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-5 md:grid-cols-4 xl:gap-x-12">
                 {this.state.books.map((item, i) => {
                   return (
                     <Link
@@ -65,7 +65,7 @@ class Category extends Component {
                           </p>
                         </div>
                         <p className="text-sm font-medium text-gray-900">
-                          <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-sky-500 text-white rounded">
+                          <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-sky-500 text-white rounded uppercase">
                             {item.type}
                           </span>
                         </p>

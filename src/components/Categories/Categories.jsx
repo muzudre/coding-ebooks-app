@@ -5,7 +5,7 @@ const categories = (props) => (
   <section className="text-gray-700 body-font border-t border-gray-200">
     <div className="max-w-2xl mx-auto py-5 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="flex flex-col w-full mb-10">
-        <h1 className="mb-2 text-2xl font-bold text-gray-800 md:text-2xl">
+        <h1 className="text-2xl font-extrabold tracking-tight text-gray-900">
           Categories
         </h1>
       </div>

@@ -61,7 +61,7 @@ class Book extends Component {
                                 By {item.author}
                               </h3>
                               <p className="text-sm font-medium text-gray-900">
-                                <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-sky-500 text-white rounded">
+                                <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-sky-500 text-white rounded uppercase">
                                   {item.type}
                                 </span>
                               </p>
@@ -81,12 +81,26 @@ class Book extends Component {
                           </div>
 
                           <div className="mt-10">
-                            <button
-                              type="submit"
+                            <h2 className="text-sm font-medium text-gray-900">
+                              License
+                            </h2>
+
+                            <div className="mt-4 space-y-6">
+                              <p className="text-sm text-gray-600">
+                                {item.license}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="mt-10">
+                            <a
+                              href={item.url}
+                              target="_blank"
+                              rel="noreferrer"
                               className="mt-10 w-full bg-sky-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                             >
-                              Download
-                            </button>
+                              {item.type === "web" ? "Open" : "Download"}
+                            </a>
                           </div>
                         </div>
                       </div>

@@ -13,6 +13,7 @@ const hero = (props) => {
           <h1 className="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-sky-300 via-sky-500 to-sky-600">
             {props.random.title}
           </h1>
+
           {props.random.author === "n/a" ? null : (
             <p className="leading-relaxed">
               By{" "}

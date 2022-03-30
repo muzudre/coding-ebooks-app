@@ -15,11 +15,11 @@ class Main extends Component {
   }
 
   fetchData = () => {
-    fetch(`${API_URL}data.json`)
+    fetch(`${API_URL}others.json`)
       .then((result) => result.json())
       .then((result) => {
         this.setState({
-          randomBook: result[Math.floor(Math.random() * 19) + 1],
+          randomBook: result[Math.floor(Math.random() * 13) + 1],
           loading: true,
         });
       })

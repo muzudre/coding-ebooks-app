@@ -13,12 +13,12 @@ const header = (props) => (
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link
-              class="flex title-font font-medium items-center text-gray-900 md:mb-0"
+              className="flex title-font font-medium items-center text-gray-900 md:mb-0"
               to={"/"}
             >
               <img className="h-10 w-auto" src={Logo} alt="Workflow" />
-              <span class="ml-3 text-xl bold text-extrabold">
-                codingebooks.com
+              <span className="text-2xl font-extrabold tracking-tight text-grey">
+                Books.com
               </span>
             </Link>
           </div>

@@ -25,10 +25,10 @@ const header = () => (
             <Link to="/" className="text-gray-500" href="">
               Home
             </Link>
-            <Link to="/" className="text-gray-500" href="">
+            {/* <Link to="/" className="text-gray-500" href="">
               About
-            </Link>
-            <Link to="/" className="text-gray-500" href="">
+            </Link> */}
+            <Link to="/terms" className="text-gray-500" href="">
               Terms
             </Link>
           </nav>

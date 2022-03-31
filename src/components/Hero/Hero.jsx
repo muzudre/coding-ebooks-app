@@ -10,8 +10,12 @@ const hero = (props) => {
     <section className="text-gray-700">
       <div className="flex md:flex-row flex-col items-center max-w-2xl mx-auto py-5 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-gray-700 via-gray-700 to-gray-600">
-            {props.random.title}
+          {/* <h1 className="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-gray-700 via-gray-700 to-gray-600">
+           
+          </h1> */}
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block xl:inline"> {props.random.title}</span>
+            <span class="block text-indigo-600 xl:inline"></span>
           </h1>
 
           {/* <h1 className="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-sky-300 via-sky-500 to-sky-600">

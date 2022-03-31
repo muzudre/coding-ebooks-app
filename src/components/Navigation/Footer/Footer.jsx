@@ -16,10 +16,7 @@ const footer = () => (
             beginner to professional, it contains more than 100+ free coding
             ebook & programming ebooks for different levels whether you are a
             newbie or advanced you will find something that will help to start
-            learning coding step by step or to increase your knowledge. This app
-            contains a list of free e-books for programmers with a live search.
-            With the simple design you can choose your best programming language
-            to learn includes:
+            learning coding step by step or to increase your knowledge.
           </p>
           <img
             className="h-10 w-auto"

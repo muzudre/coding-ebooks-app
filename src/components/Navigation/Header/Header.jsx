@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/logo.png";
 
-const header = (props) => (
+const header = () => (
   <>
     <p className="bg-sky-500 h-10 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
       All ebooks in this web page is under open license.
@@ -17,9 +17,7 @@ const header = (props) => (
               to={"/"}
             >
               <img className="h-10 w-auto" src={Logo} alt="Workflow" />
-              <span className="text-2xl font-extrabold tracking-tight text-grey">
-                Books.com
-              </span>
+              <span className="text-2xl font-extrabold text-gray-900"></span>
             </Link>
           </div>
 
@@ -35,17 +33,17 @@ const header = (props) => (
             </Link>
           </nav>
 
-          <div className="items-center justify-end flex-1 hidden space-x-4 sm:flex">
+          <div className="items-center justify-end flex-1 space-x-4 sm:flex">
             <Link
               to="/app"
-              className="px-5 py-2 text-sm font-medium text-white bg-sky-500 rounded-lg"
+              className="px-5 py-2 text-sm font-medium text-white bg-sky-500 rounded-lg hover:text-white hover:bg-sky-400"
               href=""
             >
               Get App
             </Link>
           </div>
 
-          <div className="lg:hidden">
+          {/* <div className="lg:hidden">
             <button
               className="p-2 text-gray-600 bg-gray-100 rounded-lg"
               type="button"
@@ -67,7 +65,7 @@ const header = (props) => (
                 />
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

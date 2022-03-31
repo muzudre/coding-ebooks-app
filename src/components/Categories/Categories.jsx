@@ -20,7 +20,7 @@ const categories = (props) => (
                 cover: `${item.cover}`,
                 desc: `${item.desc}`,
               }}
-              className="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-gray-100"
+              className="h-full flex items-center border shadow-md p-4 rounded-lg hover:bg-gray-50 border-gray-50"
             >
               <img
                 alt={item.title}

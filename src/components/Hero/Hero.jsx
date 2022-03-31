@@ -1,30 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Spinner from "../UI/Spinner/Spinner";
 import Badge from "../Badge/Badge";
 import { IMAGE_BASE_URL } from "../../config/config";
-import { stringToSlug } from "../../config/helper";
+// import { Link } from "react-router-dom";
+// import { stringToSlug } from "../../config/helper";
 
 const hero = (props) => {
   return props.loading ? (
     <section className="text-gray-700">
       <div className="flex md:flex-row flex-col items-center max-w-2xl mx-auto py-5 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-sky-300 via-sky-500 to-sky-600">
+          <h1 className="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-gray-700 via-gray-700 to-gray-600">
             {props.random.title}
           </h1>
 
+          {/* <h1 className="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-sky-300 via-sky-500 to-sky-600">
+            {props.random.title}
+          </h1> */}
+
           {props.random.author === "n/a" ? null : (
             <p className="leading-relaxed">
-              By{" "}
-              <a
-                href={props.random.authorUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="text-sky-500"
-              >
-                {props.random.author}
-              </a>
+              By <span className="text-sky-500">{props.random.author}</span>
             </p>
           )}
 
@@ -45,7 +41,7 @@ const hero = (props) => {
               href={props.random.url}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex text-white bg-sky-500 border-0 py-2 px-6 focus:outline-none hover:bg-sky-600 rounded text-lg"
+              className="inline-flex text-white bg-sky-500 border-0 py-2 px-6 focus:outline-none  hover:bg-sky-400 hover:text-white rounded-lg text-lg"
             >
               {props.random.type === "web" ? "Open" : "Download"}
             </a>

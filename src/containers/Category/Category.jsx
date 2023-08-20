@@ -162,7 +162,7 @@ class Category extends Component {
                             </p>
                           </div>
                           <p className="text-sm font-medium text-gray-900">
-                            <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-sky-500 text-white rounded uppercase">
+                            <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-red-500 text-white rounded uppercase">
                               {item.type}
                             </span>
                           </p>
